@@ -1,15 +1,22 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <OutputType>WinExe</OutputType>
-    <TargetFramework>net8.0-windows</TargetFramework>
-    <Nullable>enable</Nullable>
-    <UseWindowsForms>true</UseWindowsForms>
-    <ImplicitUsings>enable</ImplicitUsings>
-  </PropertyGroup>
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net8.0-windows</TargetFramework>
+		<Nullable>enable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
 
-  <ItemGroup>
-    <Folder Include="Images\" />
-  </ItemGroup>
+		<!-- ESTA É A LINHA QUE VOCÊ DEVE ADICIONAR -->
+		<ApplicationManifest>app.manifest</ApplicationManifest>
+		<ApplicationIcon>Gemini_Generated_Image_ixozvsixozvsixoz.ico</ApplicationIcon>
+
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="Gemini_Generated_Image_ixozvsixozvsixoz.ico" />
+	</ItemGroup>
+
+	<!-- ...resto do arquivo... -->
 
 </Project>

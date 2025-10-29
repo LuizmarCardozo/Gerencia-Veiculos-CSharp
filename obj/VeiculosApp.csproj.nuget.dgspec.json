@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\TI-01\\source\\repos\\VeiculosApp\\VeiculosApp\\VeiculosApp.csproj": {}
+    "C:\\Users\\luizm\\OneDrive\\Área de Trabalho\\Programas\\Gerencia-Veiculos-CSharp\\VeiculosApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\TI-01\\source\\repos\\VeiculosApp\\VeiculosApp\\VeiculosApp.csproj": {
+    "C:\\Users\\luizm\\OneDrive\\Área de Trabalho\\Programas\\Gerencia-Veiculos-CSharp\\VeiculosApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\TI-01\\source\\repos\\VeiculosApp\\VeiculosApp\\VeiculosApp.csproj",
+        "projectUniqueName": "C:\\Users\\luizm\\OneDrive\\Área de Trabalho\\Programas\\Gerencia-Veiculos-CSharp\\VeiculosApp.csproj",
         "projectName": "VeiculosApp",
-        "projectPath": "C:\\Users\\TI-01\\source\\repos\\VeiculosApp\\VeiculosApp\\VeiculosApp.csproj",
-        "packagesPath": "C:\\Users\\TI-01\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\TI-01\\source\\repos\\VeiculosApp\\VeiculosApp\\obj\\",
+        "projectPath": "C:\\Users\\luizm\\OneDrive\\Área de Trabalho\\Programas\\Gerencia-Veiculos-CSharp\\VeiculosApp.csproj",
+        "packagesPath": "C:\\Users\\luizm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\luizm\\OneDrive\\Área de Trabalho\\Programas\\Gerencia-Veiculos-CSharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\TI-01\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\luizm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -69,7 +68,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

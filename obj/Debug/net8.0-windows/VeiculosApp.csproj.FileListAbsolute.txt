@@ -16,3 +16,21 @@ C:\Users\TI-01\source\repos\VeiculosApp\VeiculosApp\obj\Debug\net8.0-windows\ref
 C:\Users\TI-01\source\repos\VeiculosApp\VeiculosApp\obj\Debug\net8.0-windows\VeiculosApp.pdb
 C:\Users\TI-01\source\repos\VeiculosApp\VeiculosApp\obj\Debug\net8.0-windows\VeiculosApp.genruntimeconfig.cache
 C:\Users\TI-01\source\repos\VeiculosApp\VeiculosApp\obj\Debug\net8.0-windows\ref\VeiculosApp.dll
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\bin\Debug\net8.0-windows\VeiculosApp.exe
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\bin\Debug\net8.0-windows\VeiculosApp.deps.json
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\bin\Debug\net8.0-windows\VeiculosApp.runtimeconfig.json
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\bin\Debug\net8.0-windows\VeiculosApp.dll
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\bin\Debug\net8.0-windows\VeiculosApp.pdb
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.MainForm.resources
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.VeiculoForm.resources
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.csproj.GenerateResource.cache
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.AssemblyInfoInputs.cache
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.AssemblyInfo.cs
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.csproj.CoreCompileInputs.cache
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.sourcelink.json
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.dll
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\refint\VeiculosApp.dll
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.pdb
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\VeiculosApp.genruntimeconfig.cache
+C:\Users\luizm\OneDrive\Área de Trabalho\Programas\Gerencia-Veiculos-CSharp\obj\Debug\net8.0-windows\ref\VeiculosApp.dll

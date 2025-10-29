@@ -1,0 +1,38 @@
+Arquivo .gitignore padrão para projetos .NET (C# / Visual Studio)
+
+Pastas geradas pelo Visual Studio e pelo sistema
+
+*.vs/
+.vs/
+[Vv]s/
+
+Pastas de Compilação (Build)
+
+[Bb]in/
+[Oo]bj/
+
+Arquivos gerados pelo usuário (User-specific)
+
+*.user
+*.suo
+
+Arquivos de IDE (JetBrains Rider, VS Code)
+
+.idea/
+.vscode/
+
+Pacotes NuGet
+
+packages/
+*.nupkg
+
+Arquivos de Teste
+
+testresults/
+*.trx
+
+Outros
+
+*.log
+*.sqlite
+*.db

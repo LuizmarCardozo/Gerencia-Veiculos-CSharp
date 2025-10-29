@@ -1,5 +1,9 @@
 ﻿namespace VeiculosApp
 {
+    using System.Drawing;
+    // Adicionado para estilos do Grid e Padding
+    using System.Windows.Forms;
+
     partial class MainForm
     {
         private System.ComponentModel.IContainer components = null;
@@ -48,6 +52,7 @@
 
         private void InitializeComponent()
         {
+            // O Designer espera que as inicializações de componentes venham primeiro.
             splitLeftRight = new SplitContainer();
             tlpLeft = new TableLayoutPanel();
             btnNovo = new Button();
@@ -78,6 +83,45 @@
             textBox1 = new TextBox();
             lblBuscar = new Label();
 
+            // --- [ESTILO MODERNO LIMPO] ---
+            // Definindo nossas cores
+            var azulPrincipal = Color.FromArgb(0, 120, 212);
+            var azulMouseOver = Color.FromArgb(0, 90, 158);
+            var cinzaFundoClaro = Color.FromArgb(245, 245, 245); // Fundo para linhas alternadas
+            var azulSelecaoGrid = Color.FromArgb(204, 232, 255); // Seleção de grid bem clara
+            var textoEscuro = Color.FromArgb(30, 30, 30);
+            var textoClaro = Color.White;
+            var fundoBranco = Color.White;
+            var fundoForm = Color.FromArgb(245, 245, 245); // Fundo geral CINZA bem claro
+
+            // Definindo estilos da tabela
+            var estiloCabecalhoGrid = new DataGridViewCellStyle();
+            estiloCabecalhoGrid.BackColor = azulPrincipal;
+            estiloCabecalhoGrid.ForeColor = textoClaro;
+            estiloCabecalhoGrid.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            estiloCabecalhoGrid.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            estiloCabecalhoGrid.Padding = new Padding(5);
+            // --- [CORREÇÃO] --- Impede que o fundo mude ao selecionar o cabeçalho
+            estiloCabecalhoGrid.SelectionBackColor = azulPrincipal;
+
+            var estiloLinhaPadrao = new DataGridViewCellStyle();
+            estiloLinhaPadrao.BackColor = fundoBranco;
+            estiloLinhaPadrao.ForeColor = textoEscuro;
+            estiloLinhaPadrao.SelectionBackColor = azulSelecaoGrid;
+            estiloLinhaPadrao.SelectionForeColor = textoEscuro; // Texto escuro na seleção clara
+            estiloLinhaPadrao.Padding = new Padding(5, 0, 5, 0);
+            estiloLinhaPadrao.Alignment = DataGridViewContentAlignment.MiddleLeft;
+
+            var estiloLinhaAlternada = new DataGridViewCellStyle();
+            estiloLinhaAlternada.BackColor = cinzaFundoClaro; // Linha alternada cinza claro
+            estiloLinhaAlternada.ForeColor = textoEscuro;
+            estiloLinhaAlternada.SelectionBackColor = azulSelecaoGrid;
+            estiloLinhaAlternada.SelectionForeColor = textoEscuro; // Texto escuro na seleção clara
+            estiloLinhaAlternada.Padding = new Padding(5, 0, 5, 0);
+            estiloLinhaAlternada.Alignment = DataGridViewContentAlignment.MiddleLeft;
+
+            // --- [FIM ESTILO] ---
+
             ((System.ComponentModel.ISupportInitialize)splitLeftRight).BeginInit();
             splitLeftRight.Panel1.SuspendLayout();
             splitLeftRight.Panel2.SuspendLayout();
@@ -102,10 +146,12 @@
 
             // ========== FORM ==========
             AutoScaleDimensions = new SizeF(7F, 15F);
-            AutoScaleMode = AutoScaleMode.Font;
+            AutoScaleMode = AutoScaleMode.Font; // Mantendo em Font para sua solução de compatibilidade
             ClientSize = new Size(980, 560);
             Name = "MainForm";
             Text = "Gerenciador de Veículos";
+            // --- [ESTILO MODERNO] ---
+            BackColor = fundoForm; // Fundo geral do Form (cinza-claro)
 
             // ========== SPLIT ESQ/DIR ==========
             splitLeftRight.Dock = DockStyle.Fill;
@@ -115,6 +161,10 @@
             splitLeftRight.Size = new Size(980, 560);
             splitLeftRight.SplitterDistance = 140;
             splitLeftRight.TabIndex = 0;
+            // --- [ESTILO MODERNO] ---
+            splitLeftRight.BackColor = Color.Transparent; // Deixa o splitter transparente
+            splitLeftRight.Panel1.BackColor = Color.Transparent; // Painel esquerdo transparente (mostra fundo do form)
+            splitLeftRight.Panel2.BackColor = fundoBranco; // Painel direito (conteúdo) branco
 
             // ----- ESQUERDA
             tlpLeft.ColumnCount = 1;
@@ -131,17 +181,45 @@
             tlpLeft.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tlpLeft.RowStyles.Add(new RowStyle(SizeType.Absolute, 1F));
             tlpLeft.RowStyles.Add(new RowStyle(SizeType.Absolute, 1F));
+            // --- [ESTILO MODERNO] ---
+            tlpLeft.BackColor = Color.Transparent; // Painel dos botões transparente
 
-            btnNovo.Text = "Novo";
+            btnNovo.Text = "   +   Novo";
             btnNovo.Dock = DockStyle.Fill;
             btnNovo.Margin = new Padding(0, 0, 0, 6);
+            // --- [ESTILO MODERNO] ---
+            btnNovo.FlatStyle = FlatStyle.Flat;
+            btnNovo.FlatAppearance.BorderSize = 0;
+            btnNovo.BackColor = azulPrincipal;
+            btnNovo.ForeColor = textoClaro;
+            btnNovo.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnNovo.FlatAppearance.MouseOverBackColor = azulMouseOver;
+            btnNovo.TextAlign = ContentAlignment.MiddleLeft; // Alinha texto (e ícone) à esquerda
 
-            btnEditar.Text = "Editar";
+
+            btnEditar.Text = "   ✎   Editar";
             btnEditar.Dock = DockStyle.Fill;
             btnEditar.Margin = new Padding(0, 0, 0, 6);
+            // --- [ESTILO MODERNO] ---
+            btnEditar.FlatStyle = FlatStyle.Flat;
+            btnEditar.FlatAppearance.BorderSize = 0;
+            btnEditar.BackColor = azulPrincipal;
+            btnEditar.ForeColor = textoClaro;
+            btnEditar.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnEditar.FlatAppearance.MouseOverBackColor = azulMouseOver;
+            btnEditar.TextAlign = ContentAlignment.MiddleLeft;
 
-            btnExcluir.Text = "Excluir";
+            btnExcluir.Text = "   ✕   Excluir";
             btnExcluir.Dock = DockStyle.Fill;
+            // --- [ESTILO MODERNO] ---
+            btnExcluir.FlatStyle = FlatStyle.Flat;
+            btnExcluir.FlatAppearance.BorderSize = 0;
+            btnExcluir.BackColor = azulPrincipal;
+            btnExcluir.ForeColor = textoClaro;
+            btnExcluir.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btnExcluir.FlatAppearance.MouseOverBackColor = azulMouseOver;
+            btnExcluir.TextAlign = ContentAlignment.MiddleLeft;
+
 
             splitLeftRight.Panel1.Controls.Add(tlpLeft);
 
@@ -150,6 +228,10 @@
             splitRight.Orientation = Orientation.Horizontal; // topo detalhes / baixo grid
             splitRight.SplitterDistance = 360;
             splitLeftRight.Panel2.Controls.Add(splitRight);
+            // --- [ESTILO MODERNO] ---
+            splitRight.BackColor = fundoBranco; // Fundo do painel direito
+            splitRight.Panel1.BackColor = fundoBranco; // Fundo do painel de detalhes
+            splitRight.Panel2.BackColor = fundoBranco; // Fundo do painel do grid
 
             // ========== TOPO: DETALHES + FOTO ==========
             tlpDetail.ColumnCount = 2;
@@ -163,12 +245,16 @@
             tlpDetail.RowStyles.Add(new RowStyle(SizeType.Absolute, 28F));
             tlpDetail.RowStyles.Add(new RowStyle(SizeType.Absolute, 28F));
             tlpDetail.RowStyles.Add(new RowStyle(SizeType.Absolute, 28F));
+            // --- [ESTILO MODERNO] ---
+            tlpDetail.BackColor = fundoBranco; // Fundo do painel de detalhes
 
             // Foto
             pictureBox1.BorderStyle = BorderStyle.FixedSingle;
             tlpDetail.SetColumnSpan(pictureBox1, 2);
             pictureBox1.Dock = DockStyle.Fill;
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            // --- [ESTILO MODERNO] ---
+            pictureBox1.BackColor = Color.FromArgb(250, 250, 250); // Fundo levemente cinza para a foto
 
             // Labels estáticos
             lblMarca.Text = "Marca:";
@@ -179,14 +265,50 @@
             lblModelo.TextAlign = ContentAlignment.MiddleRight;
             lblAno.TextAlign = ContentAlignment.MiddleRight;
             lblPreco.TextAlign = ContentAlignment.MiddleRight;
-            lblMarca.Dock = lblModelo.Dock = lblAno.Dock = lblPreco.Dock = DockStyle.Fill;
+            // --- [ESTILO MODERNO] ---
+            lblMarca.BackColor = fundoBranco;
+            lblModelo.BackColor = fundoBranco;
+            lblAno.BackColor = fundoBranco;
+            lblPreco.BackColor = fundoBranco;
+            lblMarca.ForeColor = textoEscuro;
+            lblModelo.ForeColor = textoEscuro;
+            lblAno.ForeColor = textoEscuro;
+            lblPreco.ForeColor = textoEscuro;
+
+            // --- [CORREÇÃO DESIGNER] --- (Para o designer não quebrar)
+            lblMarca.Dock = DockStyle.Fill;
+            lblModelo.Dock = DockStyle.Fill;
+            lblAno.Dock = DockStyle.Fill;
+            lblPreco.Dock = DockStyle.Fill;
 
             // Valores
             lblMarcaVal.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblModeloVal.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblAnoVal.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
             lblPrecoVal.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            lblMarcaVal.Dock = lblModeloVal.Dock = lblAnoVal.Dock = lblPrecoVal.Dock = DockStyle.Fill;
+
+            // --- [NOVA CORREÇÃO DE ALINHAMENTO] ---
+            lblMarcaVal.TextAlign = ContentAlignment.MiddleLeft;
+            lblModeloVal.TextAlign = ContentAlignment.MiddleLeft;
+            lblAnoVal.TextAlign = ContentAlignment.MiddleLeft;
+            lblPrecoVal.TextAlign = ContentAlignment.MiddleLeft;
+
+            // --- [ESTILO MODERNO] ---
+            lblMarcaVal.BackColor = fundoBranco;
+            lblModeloVal.BackColor = fundoBranco;
+            lblAnoVal.BackColor = fundoBranco;
+            lblPrecoVal.BackColor = fundoBranco;
+            lblMarcaVal.ForeColor = azulPrincipal; // Cor de destaque
+            lblModeloVal.ForeColor = azulPrincipal; // Cor de destaque
+            lblAnoVal.ForeColor = azulPrincipal; // Cor de destaque
+            lblPrecoVal.ForeColor = azulPrincipal; // Cor de destaque
+
+
+            // --- [CORREÇÃO DESIGNER] --- (Para o designer não quebrar)
+            lblMarcaVal.Dock = DockStyle.Fill;
+            lblModeloVal.Dock = DockStyle.Fill;
+            lblAnoVal.Dock = DockStyle.Fill;
+            lblPrecoVal.Dock = DockStyle.Fill;
 
             // Monta detahes
             tlpDetail.Controls.Add(pictureBox1, 0, 0);
@@ -206,19 +328,29 @@
             navTlp.RowCount = 1;
             navTlp.ColumnCount = 3;
             navTlp.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F)); // filler esq
-            navTlp.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));     // centro
+            navTlp.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize)); // centro
             navTlp.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F)); // filler dir
+            // --- [ESTILO MODERNO] ---
+            navTlp.BackColor = fundoBranco;
 
             navFlow.AutoSize = true;
             navFlow.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             navFlow.FlowDirection = FlowDirection.LeftToRight;
             navFlow.WrapContents = false;
             navFlow.Anchor = AnchorStyles.None;
+            // --- [ESTILO MODERNO] ---
+            navFlow.BackColor = fundoBranco;
+
 
             btnFotoAnterior.Text = "◀";
             btnFotoAnterior.Width = 36;
             btnFotoAnterior.Height = 28;
             btnFotoAnterior.Margin = new Padding(0, 0, 8, 0);
+            // --- [ESTILO MODERNO] ---
+            btnFotoAnterior.FlatStyle = FlatStyle.Flat;
+            btnFotoAnterior.BackColor = cinzaFundoClaro; // Fundo mais claro
+            btnFotoAnterior.ForeColor = azulPrincipal;
+
 
             lblFotoIndex.AutoSize = true;
             lblFotoIndex.Text = "0/0";
@@ -228,6 +360,10 @@
             btnFotoProxima.Width = 36;
             btnFotoProxima.Height = 28;
             btnFotoProxima.Margin = new Padding(0);
+            // --- [ESTILO MODERNO] ---
+            btnFotoProxima.FlatStyle = FlatStyle.Flat;
+            btnFotoProxima.BackColor = cinzaFundoClaro; // Fundo mais claro
+            btnFotoProxima.ForeColor = azulPrincipal;
 
             navFlow.Controls.Add(btnFotoAnterior);
             navFlow.Controls.Add(lblFotoIndex);
@@ -243,14 +379,22 @@
             pnlBottomTop.Dock = DockStyle.Top;
             pnlBottomTop.Padding = new Padding(8, 8, 8, 6);
             pnlBottomTop.Height = 38;
+            // --- [ESTILO MODERNO] ---
+            pnlBottomTop.BackColor = fundoBranco;
 
             lblBuscar.Text = "Buscar:";
             lblBuscar.AutoSize = true;
             lblBuscar.Dock = DockStyle.Left;
+            // --- [ESTILO MODERNO] ---
+            lblBuscar.BackColor = Color.Transparent;
+
 
             textBox1.Dock = DockStyle.Fill;
             textBox1.Margin = new Padding(8, 0, 0, 0);
             textBox1.PlaceholderText = "marca / modelo / ano";
+            // --- [ESTILO MODERNO] ---
+            textBox1.BorderStyle = BorderStyle.FixedSingle; // Borda sutil
+
 
             pnlBottomTop.Controls.Add(textBox1);
             pnlBottomTop.Controls.Add(lblBuscar);
@@ -261,6 +405,17 @@
             dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersVisible = false;
             dataGridView1.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            // --- [ESTILO MODERNO] ---
+            dataGridView1.BackgroundColor = fundoBranco;
+            dataGridView1.BorderStyle = BorderStyle.None;
+            dataGridView1.GridColor = cinzaFundoClaro; // Cor da grade mais clara
+            dataGridView1.EnableHeadersVisualStyles = false; // Essencial para estilizar cabeçalho
+            dataGridView1.RowTemplate.Height = 32; // Mais espaçamento
+            dataGridView1.ColumnHeadersHeight = 40; // Cabeçalho mais alto
+            dataGridView1.ColumnHeadersDefaultCellStyle = estiloCabecalhoGrid;
+            dataGridView1.DefaultCellStyle = estiloLinhaPadrao;
+            dataGridView1.AlternatingRowsDefaultCellStyle = estiloLinhaAlternada;
+
 
             splitRight.Panel2.Controls.Add(dataGridView1);
             splitRight.Panel2.Controls.Add(pnlBottomTop);
@@ -296,3 +451,4 @@
         }
     }
 }
+
