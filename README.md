@@ -57,15 +57,7 @@ C#
 
 Windows Forms
 
-Como Compilar e Executar
-
-Clone este repositório.
-
-Abra o arquivo de solução (.sln) no Visual Studio 2022.
-
-Certifique-se de que o .NET 8 SDK esteja instalado.
-
-Compile o projeto (pressione F5 ou "Compilar Solução").
+**BAIXE O ARQUIVO ZIP EM RELEASES**
 
 ## ⚠️ AVISO IMPORTANTE: Escala de Tela (High-DPI)
 
