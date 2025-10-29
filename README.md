@@ -1,4 +1,4 @@
-## Gerenciador de Veículos ##
+# Gerenciador de Veículos 
 
 Um aplicativo de desktop (Windows Forms) para catalogar e gerenciar um inventário de veículos. Este projeto foi desenvolvido em C# e .NET 8, com foco em uma interface de usuário limpa e funcional.
 
@@ -18,11 +18,11 @@ Um aplicativo de desktop (Windows Forms) para catalogar e gerenciar um inventár
 <img width="1919" height="1026" alt="image" src="https://github.com/user-attachments/assets/e2790f50-e537-4e68-915f-b7a9f0829443" />
 
 
-## Principais Funcionalidades ##
+# Principais Funcionalidades 
 
 Listagem de Veículos: Exibe todos os veículos cadastrados em uma grade clara e moderna.
 
-## CRUD Completo: ##
+# CRUD Completo: 
 
 **Criar: Adiciona novos veículos ao catálogo.**
 
@@ -31,7 +31,7 @@ Listagem de Veículos: Exibe todos os veículos cadastrados em uma grade clara e
 
 **Deletar: Remove um veículo do catálogo com confirmação.**
 
-## Galeria de Fotos:
+# Galeria de Fotos:
 
 Permite adicionar múltiplas fotos para cada veículo.
 
@@ -41,7 +41,7 @@ Remoção de fotos individuais.
 
 Busca Rápida: Filtra a lista de veículos em tempo real por Marca, Modelo ou Ano.
 
-## Interface Estilizada:
+# Interface Estilizada:
 
 Design limpo usando uma paleta de cores profissional (Azul, Branco e Cinza).
 
@@ -49,7 +49,7 @@ Controles personalizados para uma aparência moderna.
 
 Ícones nos botões para melhor usabilidade.
 
-## Tecnologias Utilizadas
+# Tecnologias Utilizadas
 
 C#
 
@@ -59,7 +59,7 @@ Windows Forms
 
 **BAIXE O ARQUIVO ZIP EM RELEASES**
 
-## ⚠️ AVISO IMPORTANTE: Escala de Tela (High-DPI)
+# ⚠️ AVISO IMPORTANTE: Escala de Tela (High-DPI) ⚠️
 
 Este projeto foi intencionalmente configurado para não ser "DPI-Aware" (Consciente de DPI). Isso foi feito para forçar o Windows a usar o dimensionamento do "Sistema", garantindo que o layout não quebre em monitores com escala de tela (como 125% ou 150%).
 
